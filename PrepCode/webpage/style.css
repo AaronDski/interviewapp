@@ -1,3 +1,30 @@
 body {
-    background: blue;
+    
+        background-image: url(https://thequeenbeandotblog.files.wordpress.com/2019/05/roasts.jpg?w=2800); /* The image used */
+        background-color: black; /* Used if the image is unavailable */
+        height: 1200px; /* You must set a specified height */
+        width: auto;
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        
   } 
+  h1{
+      text-align: center;  
+      background-color:crimson;
+        font-family:'Courier New', Courier, monospace;
+
+  }
+  body a{
+       text-align: center; 
+      background: gray;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: auto;
+  }
+  p{
+        float: left;
+        width: 25%;
+        background: darkgray;
+        text-align: center;
+  }
