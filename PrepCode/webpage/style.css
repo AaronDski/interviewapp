@@ -25,13 +25,38 @@ body {
   div#Chem{
       float: left;
       width: 25%;
-      background: darkgray;
+      text-shadow: 2px 2px 4px blue;
       text-align: center;
       margin: auto;
+      color: whitesmoke;
 }
+div#Aero{
+      float: left;
+      width: 25%;
+      text-shadow: 2px 2px 4px red;
+      text-align: center;
+      margin: auto;
+      color: whitesmoke;
+}   
+div#French{
+      float: left;
+      width: 25%;
+      text-shadow: 2px 2px 4px black;
+      text-align: center;
+      margin: auto;
+      color: whitesmoke;
+} 
+div#Cold{
+      float: left;
+      width: 25%;
+      text-shadow: 2px 2px 4px lightblue;
+      text-align: center;
+      margin: auto;
+      color: whitesmoke;
+}    
   p{
-        float: left;
+        
       
-        background: darkgray;
+        
         text-align: center;
   }
