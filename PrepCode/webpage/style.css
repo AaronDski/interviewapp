@@ -1,3 +1,10 @@
+div#header {
+      text-align: center;  
+      background-color:crimson;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      color:darkgrey  
+
+}
 body {
     
         background-image: url(https://thequeenbeandotblog.files.wordpress.com/2019/05/roasts.jpg?w=2800); /* The image used */
@@ -9,7 +16,7 @@ body {
         background-size: cover; /* Resize the background image to cover the entire container */
         
   } 
-  h1{
+  {
       text-align: center;  
       background-color:crimson;
       font-family:'Courier New', Courier, monospace;
