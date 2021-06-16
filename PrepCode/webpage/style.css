@@ -12,31 +12,42 @@ body {
   h1{
       text-align: center;  
       background-color:crimson;
-        font-family:'Courier New', Courier, monospace;
+      font-family:'Courier New', Courier, monospace;
+      color:darkgrey  
 
   }
   body a{
         text-align: center; 
-        background: gray;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin: auto;
+        color: blue;
+        
+       
+        
+        
+        
+        
   }
-  div#Chem{
+div#Chem{
       float: left;
       width: 25%;
       text-shadow: 2px 2px 4px blue;
       text-align: center;
       margin: auto;
       color: whitesmoke;
+      padding-left: 50px;
+      padding-right: 50px;
+}
+ul {
+      text-align: left;
 }
 div#Aero{
       float: left;
       width: 25%;
-      text-shadow: 2px 2px 4px red;
+      text-shadow: 4px 4px 6px green;
       text-align: center;
       margin: auto;
-      color: whitesmoke;
+      color:whitesmoke;
+      padding-left: 50px;
+      padding-right: 50px;
 }   
 div#French{
       float: left;
@@ -45,6 +56,8 @@ div#French{
       text-align: center;
       margin: auto;
       color: whitesmoke;
+      padding-left: 50px;
+      padding-right: 50px;
 } 
 div#Cold{
       float: left;
@@ -53,10 +66,7 @@ div#Cold{
       text-align: center;
       margin: auto;
       color: whitesmoke;
+      padding-left: 50px;
+      padding-right: 50px;
 }    
-  p{
-        
-      
-        
-        text-align: center;
-  }
+  
