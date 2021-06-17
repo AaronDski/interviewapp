@@ -1,8 +1,10 @@
 div#header {
       text-align: center;  
-      background-color:crimson;
+      background-color:black;
       font-family:Verdana, Geneva, Tahoma, sans-serif;
-      color:darkgrey  
+      color:darkgrey;
+      width: auto;
+      border-style: inset;
 
 }
 body {
@@ -14,25 +16,7 @@ body {
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover; /* Resize the background image to cover the entire container */
-        
-  } 
-  {
-      text-align: center;  
-      background-color:crimson;
-      font-family:'Courier New', Courier, monospace;
-      color:darkgrey  
-
-  }
-  body a{
-        text-align: center; 
-        color: blue;
-        
-       
-        
-        
-        
-        
-  }
+} 
 div#Chem{
       float: left;
       width: 25%;
@@ -42,6 +26,7 @@ div#Chem{
       color: whitesmoke;
       padding-left: 50px;
       padding-right: 50px;
+      font-family:'Courier New', Courier, monospace;
 }
 ul {
       text-align: left;
@@ -55,6 +40,7 @@ div#Aero{
       color:whitesmoke;
       padding-left: 50px;
       padding-right: 50px;
+      font-family:'Courier New', Courier, monospace;
 }   
 div#French{
       float: left;
@@ -65,15 +51,13 @@ div#French{
       color: whitesmoke;
       padding-left: 50px;
       padding-right: 50px;
+      font-family:'Courier New', Courier, monospace;
 } 
-div#Cold{
-      float: left;
-      width: 25%;
-      text-shadow: 2px 2px 4px lightblue;
-      text-align: center;
-      margin: auto;
-      color: whitesmoke;
-      padding-left: 50px;
-      padding-right: 50px;
-}    
-  
+a{
+      color:snow;
+}
+div#bott{
+      color: snow;
+      
+
+}
