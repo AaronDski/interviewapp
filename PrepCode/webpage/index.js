@@ -1,4 +1,4 @@
-const p = document.querySelector('p');
+const p = document.querySelector('a');
 p.onmouseover = logMouseOver;
 p.onmouseout = logMouseOut;
 
