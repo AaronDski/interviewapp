@@ -1,11 +1,7 @@
-const p = document.querySelector('a');
-p.onmouseover = logMouseOver;
-p.onmouseout = logMouseOut;
-
-function logMouseOver() {
-  p.textContent = 'MOUSE OVER detected';
-}
-
-function logMouseOut() {
-  p.textContent = 'MOUSE OUT detected';
-}
+const chem = document.querySelector('#HC')
+var aero = document.getElementById("Aero")
+var french = document.getElementById("French")
+var header = document.getElementById("header")
+chem.addEventListener("click", function() {
+    console.log("Hi");
+})
