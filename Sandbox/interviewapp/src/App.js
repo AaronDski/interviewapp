@@ -6,12 +6,33 @@ function App() {
   const [dishName, setDishName] = useState('')
   const [dishArr, setDishArr] = useState([]);
 
+  // function nameSetter(e){
+  //   setDishName(e.target.value)
+  //   console.log(dishName)
+  // }
+
+  const hanldeChange = e => {
+    setDishName(e.target.value);
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault();
+
+    props.onSubmit({
+      id: Math.floor(Math.random() * 10000),
+      text: input
+    });
+    setInput('');
+  };
+
+  let displayArr = ([...dishArr, dishName]);
+  console.log(displayArr)
+
   function addName (e){
     e.preventDefault()
-    setDishName(e.target.value)
     setDishArr([...dishArr, dishName]);
-    console.log(dishName)
-
+    console.log(dishArr)
+    e.target.value = ''
   }
 
   function displayNames(){
@@ -35,9 +56,8 @@ function App() {
                 type="text"
                 placeholder="Enter Dish Name"
                 value={dishName}
-                onChange={addName}
-            />
-            <button onClick={addName} type="button" >Add Dish</button>
+                onChange={hanldeChange}            />
+            <button  type="submit" >Add Dish</button>
         </form>
 
         <div>
