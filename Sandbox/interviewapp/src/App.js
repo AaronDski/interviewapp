@@ -20,7 +20,10 @@ function App() {
         />
       </div>
       <div>
-        <DishList dishArr={dishArr} />
+        <DishList 
+        dishArr={dishArr} 
+        setDishArr={setDishArr} 
+        />
       </div>
     </div>
   );
