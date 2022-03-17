@@ -8,7 +8,8 @@ function App() {
   const [dishName, setDishName] = useState("");
   const [dishArr, setDishArr] = useState([]);
   const [dishIngre, setDishIngre] = useState([]);
-  const [dishFilter, setDishFilter] = useState([]);
+  const [dishFilter, setDishFilter] = useState(' ');
+  const [dishFilteredArr, setDishFilteredArr] = useState([])
 
   return (
     <div className="App">
@@ -23,12 +24,17 @@ function App() {
           setDishIngre={setDishIngre}
           dishFilter={dishFilter}
           setDishFilter={setDishFilter}
+          dishFilteredArr={dishFilteredArr}
+          setDishFilteredArr={setDishFilteredArr}
         />
       </div>
       <div>
         <DishList 
         dishArr={dishArr} 
         setDishArr={setDishArr} 
+        dishFilter={dishFilter}
+        dishFilteredArr={dishFilteredArr}
+        setDishFilteredArr={setDishFilteredArr}
         />
       </div>
     </div>

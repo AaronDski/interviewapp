@@ -1,7 +1,7 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 
-function Form({ dishName, setDishName, dishArr, setDishArr, dishIngre, setDishIngre, dishFilter, setDishFilter }) {
+function Form({ dishName, setDishName, dishArr, setDishArr, dishIngre, setDishIngre, dishFilter, setDishFilter, dishFilteredArr, setDishFilteredArr }) {
   const onInputChange = (e) => {
     setDishName(e.target.value);
     // console.log(dishName);
@@ -14,7 +14,11 @@ function Form({ dishName, setDishName, dishArr, setDishArr, dishIngre, setDishIn
 
   const onFilterChange = (e) => {
     setDishFilter(e.target.value);
-    // console.log(dishName);
+    setDishFilteredArr([...dishArr.filter((dish) => dish.ingreList.includes(dishFilter)) ])
+
+    
+
+    console.log(dishFilteredArr);
   };
 
   const onFormSubmit = (e) => {
@@ -26,12 +30,7 @@ function Form({ dishName, setDishName, dishArr, setDishArr, dishIngre, setDishIn
     console.log(dishIngre)
   };
 
-  const filterList = (e) => {
-      e.preventDefault();
-      setDishFilter(dishArr.filter((dish) => dish.ingreList === dishFilter))
-    //   setDishArr(dishArr.filter((dish) => dish.id !== id));
-
-  }
+  
 
 
   return (
@@ -44,6 +43,7 @@ function Form({ dishName, setDishName, dishArr, setDishArr, dishIngre, setDishIn
           required
           onChange={onInputChange}
         />
+        <br></br>
         <input
           type="text"
           placeholder="Enter Dish Ingredents Here..."
@@ -54,17 +54,16 @@ function Form({ dishName, setDishName, dishArr, setDishArr, dishIngre, setDishIn
         
         <button type="submit">Add</button>
       </form>
-
-      <form onSubmit={filterList}>
+        <br></br>
+      <form >
       <input
           type="text"
-          placeholder="Enter Dish Ingredents Here..."
+          placeholder="Search Ingredents"
           value={dishFilter}
           required
           onChange={onFilterChange}
         />
       </form>
-      <button type="submit">Filter List</button>
     </div>
   );
 }
