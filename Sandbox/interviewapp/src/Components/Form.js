@@ -14,10 +14,15 @@ function Form({ dishName, setDishName, dishArr, setDishArr, dishIngre, setDishIn
 
   const onFilterChange = (e) => {
     setDishFilter(e.target.value);
+    // setDishFilteredArr([...dishArr.filter((dish) => dish.ingreList.includes(dishFilter)) ])
+
+    // console.log(dishFilteredArr);
+  };
+
+  const onFilterSubmit = (e) => {
+      e.preventDefault()
+    // setDishFilter(e.target.value);
     setDishFilteredArr([...dishArr.filter((dish) => dish.ingreList.includes(dishFilter)) ])
-
-    
-
     console.log(dishFilteredArr);
   };
 
@@ -55,7 +60,7 @@ function Form({ dishName, setDishName, dishArr, setDishArr, dishIngre, setDishIn
         <button type="submit">Add</button>
       </form>
         <br></br>
-      <form >
+      <form onSubmit={onFilterSubmit}>
       <input
           type="text"
           placeholder="Search Ingredents"
@@ -63,6 +68,8 @@ function Form({ dishName, setDishName, dishArr, setDishArr, dishIngre, setDishIn
           required
           onChange={onFilterChange}
         />
+        <button type="submit">filter </button>
+
       </form>
     </div>
   );
